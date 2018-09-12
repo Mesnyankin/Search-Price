@@ -1,0 +1,75 @@
+// public Excel.Range DataXLS
+/* Excel.Application excelApp = new Excel.Application();
+                 Excel.Workbook workbook;
+                 Excel.Worksheet worksheet;
+                 Excel.Range range;
+                 workbook = excelApp.Workbooks.Open(Environment.CurrentDirectory + pathFile,
+                       Type.Missing, true, Type.Missing,
+                       "WWWWW", "WWWWW", Type.Missing, Type.Missing, Type.Missing,
+                       Type.Missing, Type.Missing, Type.Missing, Type.Missing,
+                       Type.Missing, Type.Missing);
+                 worksheet = (Excel.Worksheet)workbook.Sheets[1];
+                 range = worksheet.UsedRange;*/
+                //DataSet dataSet = new DataSet();
+                //IEnumerable<String> result;
+
+
+                /* RowsCount = range.Rows.Count;
+                ColumnsCount = range.Columns.Count;
+                dt.AcceptChanges();
+                workbook.Close(true, pathFile, null);
+                excelApp.Quit();
+                dt.DefaultView;*/
+                //return range as Excel.Range;
+
+                        /*Excel.Range range;
+                        ExcelData exceldata = new ExcelData();
+                        exceldata.pathFile = path; //Путь к файлу
+                        range = exceldata.DataXLS;
+                        process = Process.GetProcessesByName("Excel");
+                        int RowsCount = range.Rows.Count;
+                        int ColumnsCount = range.Columns.Count;*/
+//else { MessageBox.Show("Please input more filter parameters!", "Attention", MessageBoxButton.OKCancel, MessageBoxImage.Warning); }
+
+                            /*for (row = 6; row <= RowsCount; row++)
+                            {
+                                if ((range.Cells[row, 7] as Excel.Range).Value2 != null && (range.Cells[row, 7] as Excel.Range).Value2 == "R" + comboBox2.Text)
+                                {
+                                    DataRow dr = dt.NewRow();
+                                    for (column = 1; column <= ColumnsCount; column++)
+                                    {
+                                        col = column;
+                                        if (column == 16)
+                                        { col--; }
+                                        if (column > 16)
+                                        { col = col - 2; }
+                                        if (column == 14 || column == 16)
+                                        { column++; }
+                                        if ((range.Cells[row, column] as Excel.Range).Value2 == null)
+                                        { dr[col - 1] = index; }
+                                        else
+                                        { dr[col - 1] = (range.Cells[row, column] as Excel.Range).Value2; }
+                                    }
+                                    dt.Rows.Add(dr);
+                                }
+                                //else { break; }
+                            }*/
+
+
+            //Process[] process;
+
+			/*foreach (Process p in process) // Убиваем процессы Excel
+                        {
+                            if (p.MainWindowHandle != null)
+                            {
+                                try
+                                {
+                                    p.Kill();
+                                    p.Refresh();
+                                }
+                                catch { MessageBox.Show("Ошибка"); }
+                            }
+                        }*/
+
+            //dt.AcceptChanges();
+            //this.dataGrid.ItemsSource = dt.DefaultView;
